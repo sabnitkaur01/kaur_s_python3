@@ -17,6 +17,7 @@ computer = choices[randint(0, 2)]
 
 # set up the game loop so that we don't have to restart all the time
 player = False
+print("==================================")
 
 while player is False:
 	# set player to True
@@ -29,9 +30,12 @@ while player is False:
 	player = input("choose rock, paper or scissors: ")
 	player = player.lower()
 
+	print("**********************************")
 	print("computer chose ", computer, "\n")
 	print("player chose ", player, "\n")
+	print("==================================")
 
+	print("==================================")
 	if player == "quit":
 		exit()
 	elif computer == player:
@@ -60,12 +64,15 @@ while player is False:
 		else:
 			print("You win!", player, "cuts", computer, "\n")
 			computer_lives = computer_lives - 1
-
+		print("==================================")
 	else:
+		print("==================================")
 		print("That's not a valid choice, try again")
+		print("***********************************")
 
 
 	# handle all lives lost for player or AI
+		print("***********************************")
 	if player_lives is 0:
 		winlose.winorlose("lost")
 		print("**********************************")
