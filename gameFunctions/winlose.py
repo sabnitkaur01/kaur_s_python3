@@ -17,10 +17,12 @@ def winorlose(status):
 	elif (choice is "Y") or (choice is "y"):
 		# reset the game so that we can start all over again
 		# this will break, currently - we will fix this next class
+		print("==================================")
 		player_lives = 5
 		computer_lives = 5
 		player = False
 		computer = choices[randint(0,2)]
+		print("**********************************")
 	
 	else:
 		# not a y or n, so make the user pick a valid choice

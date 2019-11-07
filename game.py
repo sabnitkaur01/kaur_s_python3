@@ -3,8 +3,10 @@ from random import randint
 from gameFunctions import winlose
 
 # set up some variables for player and AI lives
+print("==================================")
 player_lives = 5
 computer_lives = 5
+print("**********************************")
 
 # choices is an array => an array is a container that can hold multiple values
 # arrays are 0-based -> first entry is 0, 2nd is 1, 3rd is 2 etc
@@ -66,9 +68,11 @@ while player is False:
 	# handle all lives lost for player or AI
 	if player_lives is 0:
 		winlose.winorlose("lost")
+		print("**********************************")
 
 	elif computer_lives is 0:
 		winlose.winorlose("won")
+		print("==================================")
 
 	else:
 		# need to check all of our conditions after checking for a tie
